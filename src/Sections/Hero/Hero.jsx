@@ -1,6 +1,7 @@
-import chira1 from '../../assets/Chira1.jpeg'
 import sun from '../../assets/sun.svg'
 import moon from '../../assets/moon.png'
+import chira_dark from '../../assets/chira-dark.jpg'
+import chira_light from '../../assets/chira-light.jpg'
 import twitter_dark from '../../assets/twitter-dark.svg'
 import linkedin_dark from '../../assets/linkedin-dark.svg'
 import github_dark from '../../assets/github-dark.svg'
@@ -20,10 +21,12 @@ function Hero() {
     const linkedInIcon = theme === 'light' ? linkedin_light : linkedin_dark;
     const githubIcon = theme === 'light' ? github_light : github_dark;
 
+    const chira = theme === 'light' ? chira_light : chira_dark;
+
   return (
     <section id='hero' className={styles.container}>
         <div className={styles.colorModeContainer}>
-            <img className={styles.hero} src={chira1} alt="Profile picture of Harindu Basnayake" />
+            <img className={styles.hero} src={chira} alt="Profile picture of Harindu Basnayake" />
             <img className={styles.colorMode} src={themeIcon} alt="color mode icon" onClick={toggleTheme} />
         </div>
         <div className={styles.info}>
