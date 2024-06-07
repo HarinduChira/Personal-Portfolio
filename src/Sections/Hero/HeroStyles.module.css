@@ -92,7 +92,7 @@
     }
 }
 
-@media (width >= 1024px){
+@media (width >= 1200px){
     .container{
         .hero{
             max-width: 500px;

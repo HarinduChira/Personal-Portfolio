@@ -90,7 +90,7 @@ p{
 }
 
 
-@media (width >= 1368px){
+@media (width >= 1200px){
     #root{
         gap: 200px;
     }
